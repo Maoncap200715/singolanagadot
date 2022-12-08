@@ -1,0 +1,80 @@
+<html lang="he" dir="rtl">
+    <head>
+        <title>
+                Home Page
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="stylesofhome.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="allmenu">
+                <button class="menubutton-show" onclick="menuclick()">
+                    <span class="material-symbols-outlined md-3remenu">
+                        menu
+                    </span>
+                </button>
+                <!---- actul navbar---->
+                <div class="nav-closed">
+                    <div class="arrow">
+                        <button class="barrow" onclick="menuclick()">
+                            <span class="material-symbols-outlined arrow">
+                              arrow_forward_ios
+                            </span>
+                        </button>
+                    </div>
+                    <img src="img/golanlogog.png" alt="the shevet Golan logo" class="logo">
+                    <div class="menu">
+                        <ul>
+                            <il>
+                                <a class="link1" href="index.html">
+                                    הגדודים
+                                </a>
+                            </il>
+                            <br>
+                            <il>
+                                <a class="link2" href="index.html">
+                                    השכב״ג
+                                </a>
+                            </il>
+                            <br>
+                            <il>
+                                <a class="link2" href="index.html">
+                                    שנים קודמות
+                                </a>
+                            </il>
+                            <br>
+                            <il>
+                                <a class="link2" href="index.html">
+                                    מה זה שבט גולן?
+                                </a>
+                            </il>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+        </main>
+        <footer>
+        </footer>
+        <script type="text/javascript">
+            const menu = document.querySelector(".nav-closed");
+            const menubut = document.querySelector(".menubutton-show");
+            function menuclick(){
+                if(menu.className=="nav-closed"){
+                    menu.classList.replace('nav-closed','nav-open');
+                    menubut.classList.replace('menubutton-show','menubutton-hide');
+                }
+                else{
+                    menu.classList.replace('nav-open','nav-closed');
+                    menubut.classList.replace('menubutton-hide','menubutton-show');
+                }
+            }
+        </script>
+    </body>
+</html>
